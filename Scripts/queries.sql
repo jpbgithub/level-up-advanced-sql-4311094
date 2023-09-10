@@ -1,7 +1,8 @@
 SELECT emp.firstName,emp.lastName,mng.firstName,mng.lastName 
-FROM employee emp
-LEFT JOIN employee mng
+FROM employee AS emp
+LEFT JOIN employee AS mng
 ON emp.managerId = mng.managerId;
+
 
 
 select firstName, lastName
